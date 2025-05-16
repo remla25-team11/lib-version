@@ -1,0 +1,17 @@
+[project]
+name = "lib-version"
+version = "0.1.1"
+description = "Version metadata"
+authors = [{name = "Your Name", email = "your@email.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "nltk"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["lib_version"]
