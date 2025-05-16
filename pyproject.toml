@@ -1,6 +1,6 @@
 [project]
 name = "lib_version"
-version = "0.0.0"
+version = "0.2.7"
 description = "Version metadata"
 authors = [{name = "Your Name", email = "your@email.com"}]
 readme = "README.md"
