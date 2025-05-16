@@ -1,17 +1,19 @@
 [project]
 name = "lib-version"
-version = "0.1.1"
+version = "0.0.0"
 description = "Version metadata"
 authors = [{name = "Your Name", email = "your@email.com"}]
 readme = "README.md"
-requires-python = ">=3.8"
-dependencies = [
-    "nltk"
-]
+packages = [{ include = "lib_version" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
 
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.8.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
 
-[tool.setuptools]
-packages = ["lib_version"]
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "pep440"
