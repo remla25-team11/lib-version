@@ -1,5 +1,5 @@
 [project]
-name = "lib-version"
+name = "lib_version"
 version = "0.0.0"
 description = "Version metadata"
 authors = [{name = "Your Name", email = "your@email.com"}]
